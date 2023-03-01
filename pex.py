@@ -14,7 +14,7 @@ import os
 zen_of_python = [
     "The Zen of Python, by Tim Peters",
     "",
-    "Beautiful ids better than Ugly.",
+    "Beautiful is better than ugly.",
     "Explicit is better than implicit.",
     "Simple is better than complex.",
     "Complex is better than complicated.",
@@ -22,7 +22,7 @@ zen_of_python = [
     "Sparse is better than dense.",
     "Readability counts.",
     "Special cases aren't special enough to break the rules.",
-    "Althouh practicality beats purity.",
+    "Although practicality beats purity.",
     "Errors should never pass silently.",
     "Unless explicitly silenced.",
     "In the face of ambiguity, refuse the temptation to guess.",
