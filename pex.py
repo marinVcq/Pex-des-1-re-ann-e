@@ -1,6 +1,35 @@
 # -------------------------------------------------------------------------------------
 
-# EXERCICE
+# EXERCICE 1
+# Ecrire un script qui analyse la fréquence des caracteres d'un texte.
+# Créer un dictionaire ayant pour clef un carctere et pour valeur un nombre d'occurence 
+# de caractere.
+# chaine test: "Cet objet est une chaine de caracteres comprenant un certain nombre de caracteres (150 pour etre precis mais seulement 119 caracteres alphabétiques).\n"
+
+# -------------------------------------------------------------------------------------
+
+# Cette fonction prend en parametre:
+# `text` -> un texte
+# Avant tout on remplace toute les majuscules par des minuscules
+
+def text_parser(text):
+    my_dict = {}
+    text = text.lower()
+    for key in text:
+        if key == " ":
+            key = "espace"
+        my_dict[key] = my_dict.get(key, 0) + 1
+    print(f'mon dictionnaire:\n {str(my_dict)}\n')
+    
+# Resultat exercice 1:
+ma_chaine = 'Cet objet est une chaine de caracteres comprenant un certain nombre de caracteres (150 pour etre precis mais seulement 119 caracteres alphabetiques).'
+text_parser(ma_chaine)
+        
+    
+
+# -------------------------------------------------------------------------------------
+
+# EXERCICE 2
 # A partir de cette variable zen_of_python eccrivez un script permettant de calculer:
 # - le nombre d'occurences de "better" dans les chaines de caractere de la liste.
 # - Le nombre d'occurence du caractere espace
@@ -100,6 +129,4 @@ find_longest2(zen_of_python)
 
 # Question 4 - La taille moyenne des chaines de caractere de la liste
 find_average_size(zen_of_python)
-
-
     
